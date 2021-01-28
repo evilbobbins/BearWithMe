@@ -7,8 +7,8 @@ Row3 Runs loading animation each key finishes on a different colour
 
 Keypad layout referance
 
-Row3 Row2 Row1 Row0
-[12] [ 8] [ 4] [ 0]
-[13] [ 9] [ 5] [ 1]
-[14] [10] [ 6] [ 2]
-[15] [11] [ 7] [ 3]
+ Row3 Row2 Row1 Row0
+ [12] [ 8] [ 4] [ 0]
+ [13] [ 9] [ 5] [ 1]
+ [14] [10] [ 6] [ 2]
+ [15] [11] [ 7] [ 3]
