@@ -6,9 +6,9 @@
 # or
 # Requires Pimoroni MicroPython : https://github.com/pimoroni/pimoroni-pico/blob/main/setting-up-micropython.md
 
-# Import the module for the ssd1306
-
+# Imports ssd1306.py driver, must be saved to pico as ssd1306.py
 import ssd1306
+# Import the modules
 import machine
 import time
 import uos
