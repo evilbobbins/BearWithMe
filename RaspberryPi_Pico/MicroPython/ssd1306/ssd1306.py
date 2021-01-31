@@ -1,4 +1,5 @@
 # MicroPython SSD1306 OLED driver, I2C and SPI interfaces
+# Must be saved to Pico as ssd1306.py
 
 from micropython import const
 import framebuf
