@@ -78,7 +78,7 @@ raspberry(0)
 display.update()
     
 while True:                                     
-    if display.is_pressed(display.BUTTON_A):    # Check if the Y button is pressed
+    if display.is_pressed(display.BUTTON_A):    # Check if the A button is pressed
         display.set_led(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
         time.sleep(0.01)
         display.circle(random.randint(0, 240), random.randint(0, 240), random.randint(0, 20))
@@ -86,7 +86,7 @@ while True:
         time.sleep(0.01)
         display.set_led(0,0,0)
         
-    if display.is_pressed(display.BUTTON_B):    # Check if the Y button is pressed
+    if display.is_pressed(display.BUTTON_B):    # Check if the B button is pressed
         raspberry(0)
 
         display.update()
