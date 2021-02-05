@@ -6,7 +6,7 @@
 #
 # Prerequisites
 #
-# Pico Display - Pimoroni display pack for Raspberry Pi Pico
+# Pico Display (240x135) - Pimoroni display pack for Raspberry Pi Pico
 # Requires Pimoroni MicroPython : https://github.com/pimoroni/pimoroni-pico/blob/main/setting-up-micropython.md
 
 # Import the module for the Display board
@@ -34,6 +34,7 @@ display.set_backlight(bl)
 red = display.create_pen(255,0,0)
 green = display.create_pen(0,255,0)
 black = display.create_pen(0,0,0)
+white = display.create_pen(255,255,255)
 
 display.set_pen(black)     
 display.clear()
@@ -103,16 +104,26 @@ while True:
         bl=bl+0.1
         if bl>1.0:
                   bl=1
+        display.set_pen(white)
+        display.text("Brightness up!", 50, 60, 200)
         display.set_backlight(bl)
         print(bl)
         display.update()
-        time.sleep(0.4)
+        time.sleep(0.5)
+        raspberry(0)
+        display.set_pen(red)
+        display.update()
         
     if display.is_pressed(display.BUTTON_Y):    # Check if the Y button is pressed
         bl=bl-0.1
         if bl<0.1:
                 bl=0.1
+        display.set_pen(white)
+        display.text("Brightness down!", 50, 60, 200)
         display.set_backlight(bl)
         print(bl)
         display.update()
-        time.sleep(0.4)
+        time.sleep(0.5)
+        raspberry(0)
+        display.set_pen(red)
+        display.update()
