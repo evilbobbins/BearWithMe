@@ -1,6 +1,8 @@
 # Raspberry shooter
 #
-# pressing button A shoots the Raspberry button B resets the Raspberry
+# pressing button A shoots the Raspberry, button B resets the Raspberry
+#
+# pressing button X increases backlight, button Y decreses backlight
 #
 # Prerequisites
 #
@@ -25,8 +27,8 @@ display_buffer = bytearray(width * height * 2)
 display.init(display_buffer)
 
 # The screen backlight starts at 0.  Must be 0.0-1.0.
-backlight = 0.5
-display.set_backlight(backlight)
+bl = 0.5
+display.set_backlight(bl)
 
 # Pen colours
 red = display.create_pen(255,0,0)
@@ -78,7 +80,7 @@ raspberry(0)
 display.update()
     
 while True:                                     
-    if display.is_pressed(display.BUTTON_A):    # Check if the A button is pressed
+    if display.is_pressed(display.BUTTON_A):    # Check if the Y button is pressed
         display.set_led(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
         time.sleep(0.01)
         display.circle(random.randint(0, 240), random.randint(0, 240), random.randint(0, 20))
@@ -86,9 +88,31 @@ while True:
         time.sleep(0.01)
         display.set_led(0,0,0)
         
-    if display.is_pressed(display.BUTTON_B):    # Check if the B button is pressed
+    if display.is_pressed(display.BUTTON_B):    # Check if the Y button is pressed
         raspberry(0)
 
         display.update()
         time.sleep(0.1)
-
+        
+    if display.is_pressed(display.BUTTON_B):    # Check if the Y button is pressed
+        raspberry(0)
+        display.update()
+        time.sleep(0.1)
+        
+    if display.is_pressed(display.BUTTON_X):    # Check if the X button is pressed
+        bl=bl+0.1
+        if bl>1.0:
+                  bl=1
+        display.set_backlight(bl)
+        print(bl)
+        display.update()
+        time.sleep(0.4)
+        
+    if display.is_pressed(display.BUTTON_Y):    # Check if the Y button is pressed
+        bl=bl-0.1
+        if bl<0.1:
+                bl=0.1
+        display.set_backlight(bl)
+        print(bl)
+        display.update()
+        time.sleep(0.4)
