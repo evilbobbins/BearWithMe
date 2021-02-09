@@ -4,8 +4,8 @@ To draw the pixel art I find it best to draw it out in the included 20x20 grid e
 
 ![Alt text](https://github.com/evilbobbins/BearWithMe/blob/main/RaspberryPi_Pico/MicroPython/Pimoroni_Display_Pack/pixel_art/Example_grid.png?raw=true "image")
 
-exporting this to a csv then removing the , and adding a ", at the end of each line
+exporting this to a csv then removing the , and adding a " at the start and a ", at the end of each line
 
 ![Alt text](https://github.com/evilbobbins/BearWithMe/blob/main/RaspberryPi_Pico/MicroPython/Pimoroni_Display_Pack/pixel_art/Example2.png?raw=true "image")
 
-This can then be used to draw the pixels out
+This can then be turned in to a single line and used to draw the pixel art on the screen
