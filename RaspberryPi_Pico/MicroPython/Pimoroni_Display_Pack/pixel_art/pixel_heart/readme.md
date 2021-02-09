@@ -1,6 +1,6 @@
 Bouncing pixel heart
 
-![Alt text](https://github.com/evilbobbins/BearWithMe/blob/main/RaspberryPi_Pico/MicroPython/Pimoroni_Display_Pack/bouncing_heart/Display_pack.jpeg?raw=true "Image")
+![Alt text](https://github.com/evilbobbins/BearWithMe/blob/main/RaspberryPi_Pico/MicroPython/Pimoroni_Display_Pack/pixel_art/pixel_heart/Display_pack.jpeg?raw=true "Image")
 
 Pixel heart that bounces right then left
 
