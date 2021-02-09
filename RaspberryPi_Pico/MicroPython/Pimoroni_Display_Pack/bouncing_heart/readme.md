@@ -1,6 +1,6 @@
 Bouncing heart
 
-
+![Alt text](https://github.com/evilbobbins/BearWithMe/blob/main/RaspberryPi_Pico/MicroPython/Pimoroni_Display_Pack/bouncing_heart/Display_pack.jpeg?raw=true "Image")
 
 Prerequisites
 
