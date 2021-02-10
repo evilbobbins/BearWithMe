@@ -63,10 +63,9 @@ def heartbeat():
     time.sleep(0.1)
     display.set_led(0,0,0)
     time.sleep(0.1)
-    display.set_led(255,0,0)
+    display.set_led(0,255,0)
     time.sleep(0.1)
     display.set_led(0,0,0)
-    time.sleep(0.1)
         
 berry = Berry(0,4)
 
